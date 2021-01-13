@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html', {
+	"title":"Главная"
+	})
+
+
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="main _container">
+
+				<nav class="navigator">
+					<section class="navigator__menu">
+						<h3 class="navigator__menu-title">Каталог товаров</h3>
+						<ul class="navigator__menu-items">
+							<li class="navigator__menu-item share">Беговые дорожки</li>
+							<li class="navigator__menu-item share">Эллиптические тренажеры</li>
+							<li class="navigator__menu-item">Велотренажеры</li>
+							<li class="navigator__menu-item">Гребные тренажеры</li>
+							<li class="navigator__menu-item">Вибромассажеры</li>
+							<li class="navigator__menu-item share">Теннисные столы</li>
+							<li class="navigator__menu-item">Баскетбол</li>
+							<li class="navigator__menu-item share">Массажные кресла</li>
+							<li class="navigator__menu-item share">Массажные столы</li>
+							<li class="navigator__menu-item">Силовые тренажеры</li>
+							<li class="navigator__menu-item">Батуты</li>
+							<li class="navigator__menu-item">Детские городки</li>
+							<li class="navigator__menu-item">Дачная мебель</li>
+							<li class="navigator__menu-item">Уличные спортивные комплексы</li>
+							<li class="navigator__menu-item">Аксессуары</li>
+						</ul>
+
+					</section>
+					<section class="navigator__menu-news">
+
+					</section>
+				</nav>
+				<section class="basic">
+					<div class="basic__search">
+						<p class="basic__search-filter">Везде</p>
+						<input class="basic__search-input" type="search" name="search" id="search">
+						<button class="basic__search-button" type="submit">Найти</button>
+
+					</div>
+				</section>
+
+
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+
+</html>
